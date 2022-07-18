@@ -1,0 +1,113 @@
+arithmatic
+
+```{r}
+3 + 4 
+5 - 5
+3 * 5
+(5 + 5) / 2 
+#The ^ operator raises the number to its left to the power of the number to its right: for example 3^2 is 9.
+3 ^ 2 
+# The modulo returns the remainder of the division of the number to the left by the number on its right, for example 5 modulo 3 or 5 %% 3 is 2.
+5 %% 3
+```
+
+Variable assignment
+
+A basic concept in (statistical) programming is called a variable.
+
+A variable allows you to store a value (e.g. 4) or an object (e.g. a function description) in R. You can then later use this variable's name to easily access the value or the object that is stored within this variable.
+
+You can assign a value 4 to a variable my_var with the command
+```{r}
+# Assign the value 42 to x
+x <- 42
+
+# Print out the value of the variable x
+x
+```
+
+you can add variables 
+
+```{r}
+# Assign a value to the variables my_apples and my_oranges
+my_apples <- 5
+my_oranges <- 6
+
+# Add these two variables together
+my_apples + my_oranges
+
+```
+
+Create the variable my_fruit
+my_fruit = my_apples + my_oranges
+Create a vector (2)
+Let us focus first!
+
+On your way from rags to riches, you will make extensive use of vectors. Vectors are one-dimension arrays that can hold numeric data, character data, or logical data. In other words, a vector is a simple tool to store data. For example, you can store your daily gains and losses in the casinos.
+
+In R, you create a vector with the combine function c(). You place the vector elements separated by a comma between the parentheses. For example:
+
+```{r}
+numeric_vector <- c(1, 2, 3)
+character_vector <- c("a", "b", "c")
+```
+
+# Complete the code such that boolean_vector contains the three elements: TRUE, 
+FALSE and TRUE (in that order).
+
+```{r}
+# Complete the code for boolean_vector
+boolean_vector <- c(TRUE, FALSE, TRUE)
+```
+Naming a vector
+As a data analyst, it is important to have a clear view on the data that you are using. Understanding what each element refers to is therefore essential.
+
+You can give a name to the elements of a vector with the names() function. Have a look at this example:
+
+some_vector <- c("John Doe", "poker player")
+names(some_vector) <- c("Name", "Profession")
+
+This code first creates a vector some_vector and then gives the two elements a name. The first element is assigned the name Name, while the second element is labeled Profession. Printing the contents to the console yields following output:
+
+          Name     Profession 
+    "John Doe" "poker player"
+    
+The code in the editor names the elements in poker_vector with the days of the week. 
+
+# Add code to do the same thing for roulette_vector.
+
+```{r}
+# Poker winnings from Monday to Friday
+poker_vector <- c(140, -50, 20, -120, 240)
+
+# Roulette winnings from Monday to Friday
+roulette_vector <- c(-24, -50, 100, -350, 10)
+
+# Assign days as names of poker_vector
+names(poker_vector) <- c("Monday", "Tuesday", "Wednesday", "Thursday", "Friday")
+
+# Assign days as names of roulette_vector
+
+names(roulette_vector) <- c("Monday", "Tuesday", "Wednesday", "Thursday", "Friday")
+```
+In the previous exercises you probably experienced that it is boring and frustrating to type and retype information such as the days of the week. However, when you look at it from a higher perspective, there is a more efficient way to do this, namely, to assign the days of the week vector to a variable!
+
+Just like you did with your poker and roulette returns, you can also create a variable that contains the days of the week. This way you can use and re-use it.
+
+# A variable days_vector that contains the days of the week has already been created for you.
+# Use days_vector to set the names of poker_vector and roulette_vector.
+```{r}
+# Poker winnings from Monday to Friday
+poker_vector <- c(140, -50, 20, -120, 240)
+
+# Roulette winnings from Monday to Friday
+roulette_vector <- c(-24, -50, 100, -350, 10)
+
+# The variable days_vector
+days_vector <- c("Monday", "Tuesday", "Wednesday", "Thursday", "Friday")
+ 
+# Assign the names of the day to roulette_vector and poker_vector
+names(poker_vector) <- days_vector
+names(roulette_vector) <- days_vector
+```
+
